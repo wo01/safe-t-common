@@ -152,6 +152,9 @@ message Features {
 	optional uint32 fw_patch = 24;			// reported firmware version if in bootloader mode
 	optional string fw_vendor = 25;			// reported firmware vendor if in bootloader mode
 	optional bytes fw_vendor_keys = 26;		// reported firmware vendor keys (their hash)
+
+	// Custom messages for the Safe-T mini
+	optional uint32 pin_remaining_zones = 100;       // report number of cryptomem zones left
 }
 
 /**
