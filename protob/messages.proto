@@ -384,6 +384,7 @@ message EthereumAddress {
  * @next ButtonRequest
  */
 message WipeDevice {
+	optional bool force = 1;		// kill zone in secure store to remove PIN?
 }
 
 /**
