@@ -22,9 +22,6 @@
 	"blacklist_urls": [
 	],
 	"known_devices": [
-		["0x534c", "0x0001", "Trezor"],
-		["0x1209", "0x53c0", "Trezor2 Bootloader"],
-		["0x1209", "0x53c1", "Trezor2"],
 		["0x0e79", "0x6001", "Safe-T mini Bootloader"],
 		["0x0e79", "0x6000", "Safe-T mini"]
 	]
