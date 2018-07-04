@@ -63,8 +63,10 @@ def sign_message(data, key):
         key = ecdsa.keys.SigningKey.from_secret_exponent(secexp = int(key, 16), curve=ecdsa.curves.SECP256k1, hashfunc=hashlib.sha256)
 
     verify = key.get_verifying_key()
-    print "Verifying key:"
+    print "Verifying key PEM:"
     print verify.to_pem()
+    print "Verifying key HEX:"
+    print binascii.hexlify(verify.to_string()), "\n"
 
     return key.sign_deterministic(data, hashfunc=hashlib.sha256)
 
