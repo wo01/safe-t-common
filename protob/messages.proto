@@ -630,6 +630,7 @@ message SignTx {
 	optional uint32 version = 4 [default=1];		// transaction version
 	optional uint32 lock_time = 5 [default=0];		// transaction lock_time
 	optional uint32 decred_expiry = 6;
+	optional bytes preblock_hash = 7;				// PreblockHash used when version = 12 (BCD anti-replay protection)
 }
 
 /**

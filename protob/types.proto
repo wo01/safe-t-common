@@ -247,6 +247,7 @@ message TransactionType {
 	optional bytes extra_data = 8;
 	optional uint32 extra_data_len = 9;
 	optional uint32 decred_expiry = 10;
+	optional bytes preblock_hash = 11;
 }
 
 /**
